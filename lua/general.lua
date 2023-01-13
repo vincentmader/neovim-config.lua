@@ -29,3 +29,14 @@ vim.o.shiftwidth = 4
 vim.o.expandtab = true
 
 -- }}}
+-- Cursor {{{
+
+-- Restore last cursor position & marks on open.
+vim.cmd([[
+    au BufReadPost *
+      \ if line("'\"") > 1 && line("'\"") <= line("$") && &ft !~# 'commit'
+      \ |   exe "normal! g`\""
+      \ | endif
+]])
+
+-- }}}
