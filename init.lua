@@ -1,4 +1,5 @@
 require("general")
-require("plugins")
 require("appearance")
+require("editing")
 require("navigation")
+require("plugins")
