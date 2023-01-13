@@ -26,3 +26,30 @@ vim.cmd([[
 ]])
 
 -- }}}
+-- CommandLine {{{
+
+-- Define function to toggle display of command line.
+vim.cmd([[
+    let s:hidden_all = 0
+    function! ToggleDisplayCommandLine()
+        if s:hidden_all  == 0
+            let s:hidden_all = 1
+            set noshowmode
+            set noruler
+            set laststatus=0
+            set noshowcmd
+        else
+            let s:hidden_all = 0
+            set showmode
+            set ruler
+            set laststatus=2
+            set showcmd
+        endif
+    endfunction
+    
+    call ToggleDisplayCommandLine()
+
+    nnoremap <S-h> :call ToggleDisplayCommandLine()<CR>
+]])
+
+-- }}}
