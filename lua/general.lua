@@ -1,3 +1,8 @@
+-- Leader Keys {{{
+
+vim.g.mapleader = ' '
+
+-- }}}
 -- Clipboard for Copy & Paste {{{
 
 vim.cmd([[
