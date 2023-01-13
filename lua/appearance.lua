@@ -18,3 +18,11 @@ vim.cmd([[
 ]])
 
 -- }}}
+-- Welcome Screen {{{
+
+-- Deactivate display of welcome message.            
+vim.cmd([[
+    set shortmess+=I
+]])
+
+-- }}}
