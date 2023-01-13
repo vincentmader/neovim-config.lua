@@ -4,3 +4,10 @@
     vim.wo.relativenumber = true
 
 -- }}}
+-- Sign Column {{{
+
+vim.cmd([[
+    let &fillchars="eob: "
+]])
+
+-- }}}
