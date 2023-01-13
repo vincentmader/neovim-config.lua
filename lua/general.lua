@@ -45,3 +45,11 @@ vim.cmd([[
 vim.opt.history = 1000
 
 -- }}}
+-- Undo History {{{
+
+vim.cmd([[set undodir=$XDG_DATA_HOME/nvim/backups]])
+vim.opt.undolevels = 1000
+vim.opt.undoreload = 1000
+vim.opt.undofile = true
+
+-- }}}
