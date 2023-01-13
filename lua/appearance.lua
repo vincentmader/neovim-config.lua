@@ -6,6 +6,7 @@
 -- }}}
 -- Sign Column {{{
 
+-- Deactivate display of tilde signs ('~') in SignColumn.
 vim.cmd([[
     let &fillchars="eob: "
 ]])
