@@ -40,3 +40,8 @@ vim.cmd([[
 ]])
 
 -- }}}
+-- NeoVim Command History {{{
+
+vim.opt.history = 1000
+
+-- }}}
