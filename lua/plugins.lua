@@ -18,5 +18,7 @@ return require("packer").startup(function()
         }
     }
 
+    use 'altercation/vim-colors-solarized'
+
     use "christoomey/vim-tmux-navigator"
 end)
