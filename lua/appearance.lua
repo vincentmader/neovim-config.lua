@@ -6,7 +6,13 @@
 -- }}}
 -- Sign Column {{{
 
--- Deactivate display of tilde signs ('~') in SignColumn.
+-- Always display sign-column.
+vim.cmd([[
+    set signcolumn=yes
+    highlight clear SignColumn
+]])
+
+-- Deactivate display of tilde signs ('~') in sign-column.
 vim.cmd([[
     let &fillchars="eob: "
 ]])
