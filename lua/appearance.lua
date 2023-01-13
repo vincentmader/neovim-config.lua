@@ -54,10 +54,8 @@ vim.cmd([[
 
 -- }}}
 -- Floating Windows {{{
--- Turn all floating windows (with `NormalFloat` highlight group) transparent.
 
-vim.cmd([[
-    highlight! link NormalFloat Normal
-]])
+-- Turn all floating windows (with `NormalFloat` highlight group) transparent.
+vim.cmd([[ highlight! link NormalFloat Normal ]])
 
 -- }}}
