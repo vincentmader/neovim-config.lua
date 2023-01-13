@@ -53,3 +53,12 @@ vim.opt.undoreload = 1000
 vim.opt.undofile = true
 
 -- }}}
+-- Intra-File Search {{{
+
+-- Make search case-insensitive, ...
+vim.opt.ignorecase = true
+
+-- ...except if capital letters are entered explicitly.
+vim.opt.smartcase = true
+
+-- }}}
