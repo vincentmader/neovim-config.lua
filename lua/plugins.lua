@@ -8,6 +8,7 @@ return require("packer").startup(function()
     use "wbthomason/packer.nvim"
 
     use "tpope/vim-commentary"
+    use "tpope/vim-repeat"
 
     -- use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
     use { "nvim-telescope/telescope.nvim", 
