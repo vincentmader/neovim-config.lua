@@ -100,8 +100,6 @@ vim.keymap.set("n", "<space>cc", ":<C-u>CocList commands<cr>", opts)
 
 vim.cmd([[
     function SetupCocColors() 
-        hi Pmenu        ctermfg=0 
-        hi CocFloating  ctermbg=0 
         hi CocMenuSel   ctermbg=4 ctermfg=white
         hi CocInlayHint ctermfg=10
     endfunction

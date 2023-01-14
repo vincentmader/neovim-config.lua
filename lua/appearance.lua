@@ -55,7 +55,20 @@ vim.cmd([[
 -- }}}
 -- Floating Windows {{{
 
--- Turn all floating windows (with `NormalFloat` highlight group) transparent.
 vim.cmd([[ highlight! link NormalFloat Normal ]])
+
+vim.cmd([[
+    function SetupFloatingWindowColors() 
+        hi Pmenu ctermfg=0 ctermbg=4
+
+        " Turn all floating windows (with `NormalFloat` highlight group) transparent.
+        hi! link NormalFloat Normal
+    endfunction
+
+    augroup floating_window_colors
+        autocmd!
+        autocmd ColorScheme solarized call SetupFloatingWindowColors()
+    augroup END
+]])
 
 -- }}}
