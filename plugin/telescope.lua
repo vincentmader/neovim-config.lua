@@ -15,7 +15,7 @@ telescope.setup({
             i = {
                 ["<C-J>"] = actions.move_selection_next,
                 ["<C-K>"] = actions.move_selection_previous,
-                ["<C-H>"] = actions.select_horizontal,
+                ["<C-X>"] = actions.select_horizontal,
                 ["<C-V>"] = actions.select_vertical,
                 ["<C-T>"] = actions.select_tab,
             }
@@ -53,5 +53,24 @@ vim.keymap.set("n", "<leader>fc", builtin.git_commits, expr_opts)
 
 -- List manpage entries, opens them in a help window on <cr>.
 vim.keymap.set("n", "<leader>fm", builtin.man_pages, expr_opts)
+
+-- }}}
+-- Colors {{{
+
+vim.cmd([[
+    function SetupTelescopeColors() 
+        hi          TelescopeMatching           ctermbg=0 ctermfg=white
+        hi          TelescopePreviewTitle       ctermfg=4
+        hi          TelescopePromptTitle        ctermfg=4
+        hi          TelescopeResultsTitle       ctermfg=4
+        hi          TelescopeSelection          ctermbg=0 ctermfg=4
+        hi          TelescopeTitle              ctermfg=4
+    endfunction
+
+    augroup user_colors
+        autocmd!
+        autocmd ColorScheme solarized call SetupTelescopeColors()
+    augroup END
+]])
 
 -- }}}
