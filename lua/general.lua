@@ -68,3 +68,8 @@ vim.opt.backup = false
 vim.opt.writebackup = false
 
 -- }}}
+-- Update Time {{{
+
+vim.opt.updatetime = 300
+
+-- }}}
