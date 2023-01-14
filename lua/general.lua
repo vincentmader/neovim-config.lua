@@ -62,3 +62,9 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- }}}
+-- Backup {{{
+
+vim.opt.backup = false
+vim.opt.writebackup = false
+
+-- }}}
