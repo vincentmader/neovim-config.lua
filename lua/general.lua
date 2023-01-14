@@ -61,6 +61,21 @@ vim.opt.ignorecase = true
 -- ...except if capital letters are entered explicitly.
 vim.opt.smartcase = true
 
+-- Define colors for search highlighting.
+vim.cmd([[
+    function SetupSearchColors() 
+        hi Search ctermbg=white ctermfg=2
+    endfunction
+
+    augroup search_colors
+        autocmd!
+        autocmd ColorScheme solarized call SetupSearchColors()
+    augroup END
+]])
+
+-- Define mapping for `<leader>/` to deactivate search highlighting.
+vim.cmd([[ nnoremap <leader>/ :nohlsearch<CR> ]])
+
 -- }}}
 -- Backup {{{
 
