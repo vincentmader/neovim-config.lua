@@ -12,6 +12,8 @@ return require("packer").startup(function()
     use "tpope/vim-surround"
     use "tpope/vim-fugitive"
 
+    use "lewis6991/gitsigns.nvim"
+
     use { "nvim-telescope/telescope.nvim", 
         requires = {
             "nvim-lua/plenary.nvim"
