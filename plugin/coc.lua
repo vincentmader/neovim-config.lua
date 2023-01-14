@@ -96,3 +96,20 @@ vim.keymap.set("n", "<space>ce", ":<C-u>CocList extensions<cr>", opts)
 vim.keymap.set("n", "<space>cc", ":<C-u>CocList commands<cr>", opts)
 
 -- }}}
+-- Colors {{{
+
+vim.cmd([[
+    function SetupCocColors() 
+        hi Pmenu        ctermfg=0 
+        hi CocFloating  ctermbg=0 
+        hi CocMenuSel   ctermbg=4 ctermfg=white
+        hi CocInlayHint ctermfg=10
+    endfunction
+
+    augroup coc_colors
+        autocmd!
+        autocmd ColorScheme solarized call SetupCocColors()
+    augroup END
+]])
+
+-- }}}
