@@ -1,6 +1,9 @@
 -- Leader Keys {{{
 
 vim.g.mapleader = ' '
+vim.cmd([[
+    let maplocalleader ="\<tab>"
+]])
 
 -- }}}
 -- Clipboard for Copy & Paste {{{
