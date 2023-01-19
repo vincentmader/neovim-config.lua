@@ -22,6 +22,8 @@ return require("packer").startup(function()
         }
     }
 
+    use 'lervag/vimtex'
+
     use 'altercation/vim-colors-solarized'
 
     use "christoomey/vim-tmux-navigator"
