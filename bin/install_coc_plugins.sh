@@ -8,12 +8,12 @@ nvim\
         coc-html\
         coc-julia\
         coc-json\
-        coc-lua\
         coc-pairs\
         coc-pyright\
         coc-rust-analyzer\
         coc-snippets\
         coc-vimtex\
     "
+        # coc-lua\       -> leads to massive amounts of RAM consumption
         # coc-jedi\
         # coc-prettier\
