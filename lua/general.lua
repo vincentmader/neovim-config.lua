@@ -91,3 +91,7 @@ vim.opt.writebackup = false
 vim.opt.updatetime = 300
 
 -- }}}
+
+vim.cmd([[
+    autocmd BufEnter *.tera :set filetype=html
+]])
