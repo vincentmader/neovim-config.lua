@@ -128,9 +128,11 @@
     "python.linting.pylamaEnabled": false, //                             default
     "python.linting.pylintEnabled": true,
     "python.linting.pylintArgs": [
-        "--disable=C0103",
-        "--disable=C0116",
-        "--disable=C3001"
+        "--disable=C0103", // invalid-name
+        "--disable=C0413", // wrong-import-position
+        "--disable=C0114", // missing-module-docstring
+        "--disable=C0116", // missing-function-doctstring
+        "--disable=C3001", // unnecessary-lambda-assignment
     ],
     "python.linting.pyflakesEnabled": false, //                           default
     // Import Sorting ───────────────────────────────────────────────────────────
