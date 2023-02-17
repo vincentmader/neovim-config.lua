@@ -27,4 +27,7 @@ return require("packer").startup(function()
     use 'altercation/vim-colors-solarized'
 
     use "christoomey/vim-tmux-navigator"
+
+    use 'pocco81/true-zen.nvim'
+    use 'folke/twilight.nvim'
 end)
