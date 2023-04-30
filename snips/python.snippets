@@ -29,6 +29,14 @@ endsnippet
 snippet from_datetime_import_timedelta_as_td ""
 from datetime import timedelta as td
 endsnippet
+# PATHLIB
+# ═════════════════════════════════════════════════════════════════════════════
+snippet import_pathlib ""
+import pathlib
+endsnippet
+snippet from_path_lib_import_Path ""
+from pathlib import Path
+endsnippet
 # OS
 # ═════════════════════════════════════════════════════════════════════════════
 snippet import_os ""
@@ -38,6 +46,11 @@ endsnippet
 # ═════════════════════════════════════════════════════════════════════════════
 snippet import_sys ""
 import sys
+endsnippet
+# TOML
+# ═════════════════════════════════════════════════════════════════════════════
+snippet import_toml ""
+import toml
 endsnippet
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
@@ -82,6 +95,9 @@ endsnippet
 snippet import_numpy_as_np ""
 import numpy as np
 endsnippet
+snippet from_numpy_import_pi_as_PI ""
+from numpy import pi as PI
+endsnippet
 
 # SCIPY
 # ═════════════════════════════════════════════════════════════════════════════
@@ -89,10 +105,10 @@ snippet import_scipy ""
 import scipy
 endsnippet
 
-# TOML
+# TERDMCOLORED
 # ═════════════════════════════════════════════════════════════════════════════
-snippet import_toml ""
-import toml
+snippet from_termcolor_import_colored ""
+from termcolor import colored
 endsnippet
 
 # TQDM
@@ -236,6 +252,9 @@ endsnippet
 snippet plt.scatter ""
 plt.scatter(${1:x}, ${2:y}, label=${3:""})
 endsnippet
+snippet plt.pcolor ""
+plt.pcolor(${1:arr})
+endsnippet
 #                                                            Axis Configuration
 # ─────────────────────────────────────────────────────────────────────────────
 snippet plt.gca().ticklabel_format(style='sci') ""
@@ -256,6 +275,12 @@ endsnippet
 snippet plt.savefig ""
 plt.savefig("$1")
 endsnippet
+#                                                                         Close
+# ─────────────────────────────────────────────────────────────────────────────
+snippet plt.close ""
+plt.close()
+endsnippet
+#                                                                   Plot Labels
 #                                                                   Plot Labels
 # ─────────────────────────────────────────────────────────────────────────────
 snippet plt.xlabel ""
@@ -284,6 +309,11 @@ endsnippet
 # ─────────────────────────────────────────────────────────────────────────────
 snippet plt.title ""
 plt.title($1)
+endsnippet
+#                                                                        Layout
+# ─────────────────────────────────────────────────────────────────────────────
+snippet plt.tight_layout ""
+plt.tight_layout()
 endsnippet
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
