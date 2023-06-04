@@ -26,7 +26,7 @@
     // ...
     // Suggestions (Floating Window) ────────────────────────────────────────────
     "suggest.snippetIndicator": " ►",
-    "suggest.maxCompleteItemCount": 16,
+    "suggest.maxCompleteItemCount": 1000,
     "suggest.floatConfig": {
         "border": true,
         "rounded": true
@@ -65,6 +65,7 @@
         "UltiSnips",
         "snippets"
     ],
+    "snippets.ultisnips.pythonPrompt": false,
     // ...
     //
     // PYRIGHT
@@ -114,7 +115,9 @@
     "python.formatting.yapfPath": "yapf", //                              default
     "python.formatting.yapfArgs": [], //                                  default
     "python.formatting.autopep8Path": "autopep8", //                      default
-    "python.formatting.autopep8Args": [], //                              default
+    "python.formatting.autopep8Args": [
+        "--ignore=C0413", // wrong-import-position
+    ],
     // Linting ──────────────────────────────────────────────────────────────────
     "python.linting.enabled": true, //                                    default
     "python.linting.flake8Enabled": false, //                             default
@@ -148,7 +151,7 @@
     "rust-analyzer.debug.vimspector.configuration.name": "launch", //     default
     "rust-analyzer.server.path": "/opt/homebrew/bin/rust-analyzer",
     "rust-analyzer.server.extraEnv": null, //                             default
-    "rust-analyzer.restartServerOnConfigChange": false, //                default
+    "rust-analyzer.restartServerOnConfigChange": true,
     "rust-analyzer.trace.server": "off", //                               default
     "rust-analyzer.updates.prompt": true, //                              default
     "rust-analyzer.updates.checkOnStartup": true, //                      default
@@ -184,6 +187,6 @@
     //
     "eslint.options": {
         "configFile": "~/.config/eslint/eslintrc"
-    }
+    },
     // ...
 }
