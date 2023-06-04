@@ -5,7 +5,35 @@ vim.cmd([[
 ]])
 
 return require("packer").startup(function() 
+    -- Add `packer` package manager.
     use "wbthomason/packer.nvim"
+
+    -- Add `coc.nvim` completion engine plugin.
+    use {'neoclide/coc.nvim', branch='release'}
+
+    -- Add `telescope.nvim` fuzzy finder plugin.
+    use { "nvim-telescope/telescope.nvim", 
+        requires = {
+            "nvim-lua/plenary.nvim"
+        }
+    }
+
+    -- Add `vimtex` plugin for faster writing of LaTeX markup code.
+    use 'lervag/vimtex'
+
+    -- Add `solarized` colorscheme.
+    use 'altercation/vim-colors-solarized'
+
+    -- Add plugin relatex to `tmux` terminal multiplexer.
+    use "christoomey/vim-tmux-navigator"
+    use 'wellle/tmux-complete.vim'
+
+    -- Add plugins needed for minimal editor.
+    use 'pocco81/true-zen.nvim'
+    use 'folke/twilight.nvim'
+
+    -- Add `undotree` plugin to visualize undo-history in navigable tree.
+    use 'mbbill/undotree'
 
     use "tpope/vim-commentary"
     use "tpope/vim-repeat"
@@ -14,24 +42,4 @@ return require("packer").startup(function()
 
     use "lewis6991/gitsigns.nvim"
 
-    use {'neoclide/coc.nvim', branch='release'}
-
-    use { "nvim-telescope/telescope.nvim", 
-        requires = {
-            "nvim-lua/plenary.nvim"
-        }
-    }
-
-    use 'lervag/vimtex'
-
-    use 'altercation/vim-colors-solarized'
-
-    use "christoomey/vim-tmux-navigator"
-    use 'wellle/tmux-complete.vim'
-
-    use 'pocco81/true-zen.nvim'
-    use 'folke/twilight.nvim'
-
-    -- Undo-Tree: Visualize undo-history in navigable tree.
-    use 'mbbill/undotree'
 end)
