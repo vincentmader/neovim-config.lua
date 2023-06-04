@@ -96,8 +96,17 @@ endsnippet
 
 snippet impl_From_for ""
 impl From<$1> for $2 {
-    fn from($3: $1) -> Self {
-	$4
+    fn from(value: $1) -> Self {
+	$3
+    }
+}
+endsnippet
+snippet impl_TryFrom_for ""
+impl TryFrom<$1> for $2 {
+    type Error = &'static str;
+
+    fn try_from(value: $1) -> Result<Self, Self::Error> {
+        $3
     }
 }
 endsnippet
