@@ -28,7 +28,7 @@ vim.cmd([[
 -- }}}
 -- CommandLine {{{
 
--- Define function to toggle display of command line.
+-- Define function to toggle display of command line via <Shift-h>.
 vim.cmd([[
     let s:hidden_all = 0
     function! ToggleDisplayCommandLine()
@@ -40,10 +40,10 @@ vim.cmd([[
             set noshowcmd
         else
             let s:hidden_all = 0
-            set showmode
+            " set showmode
             set ruler
             set laststatus=2
-            set showcmd
+            " set showcmd
         endif
     endfunction
     
