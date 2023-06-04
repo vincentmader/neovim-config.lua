@@ -4,6 +4,12 @@ local expr_opts = { noremap=true, silent=true }
 vim.keymap.set("i", "jk", "<esc>:w<cr>", expr_opts)
 
 -- }}}
+-- Use `backspace` to go back to last opened buffer. {{{
+
+local expr_opts = { noremap=true, silent=true }
+vim.keymap.set("n", "<BS>", "<C-^>", expr_opts)
+
+-- }}}
 -- Window Splits {{{
 
 vim.opt.splitbelow = true
