@@ -27,7 +27,11 @@ return require("packer").startup(function()
     use 'altercation/vim-colors-solarized'
 
     use "christoomey/vim-tmux-navigator"
+    use 'wellle/tmux-complete.vim'
 
     use 'pocco81/true-zen.nvim'
     use 'folke/twilight.nvim'
+
+    -- Undo-Tree: Visualize undo-history in navigable tree.
+    use 'mbbill/undotree'
 end)
