@@ -1,8 +1,0 @@
-#+title: TODOs
-
-**** TODO Install & configure "neoclip" plugin.
-**** TODO Implement telescope quickfix list.
-**** TODO Implement more telescope pickers.
-See [[https://github.com/nvim-telescope/telescope.nvim#pickers][here]] for a complete list of built-in pickers.
-**** TODO Configure .tera files to be handled as .html files.
-**** TODO Map `localleader` to `<TAB>`
