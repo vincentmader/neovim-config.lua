@@ -19,13 +19,13 @@ return require("packer").startup(function()
     }
 
     -- Add `nvim-treesitter` plugin.
-    use {
-        'nvim-treesitter/nvim-treesitter',
-        run = function()
-            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
-            ts_update()
-        end,
-    }
+    -- use {
+    --     'nvim-treesitter/nvim-treesitter',
+    --     run = function()
+    --         local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+    --         ts_update()
+    --     end,
+    -- }
 
     -- Add `vimtex` plugin for faster writing of LaTeX markup code.
     use 'lervag/vimtex'
