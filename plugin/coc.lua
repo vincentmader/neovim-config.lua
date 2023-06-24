@@ -1,3 +1,9 @@
+-- Define `coc_config_home` & `coc_data_home` directories. {{{
+
+vim.g.coc_config_home = "$XDG_CONFIG_HOME/nvim"
+vim.g.coc_data_home = "$XDG_DATA_HOME/coc"
+
+-- }}}
 -- Show Documentation {{{
 
 -- Use K to show documentation in preview window
