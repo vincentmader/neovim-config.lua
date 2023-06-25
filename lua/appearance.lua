@@ -72,3 +72,15 @@ vim.cmd([[
 ]])
 
 -- }}}
+-- Folding {{{
+
+vim.wo.foldmethod = "marker"
+vim.wo.foldlevel = 0
+vim.api.nvim_command[[
+  autocmd ColorScheme * highlight clear Folded
+]]
+-- vim.cmd([[
+--     set fillchars+=fold:\ 
+-- ]])
+
+-- }}}
