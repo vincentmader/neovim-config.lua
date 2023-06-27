@@ -162,6 +162,7 @@
     "rust-analyzer.cargo.autoreload": true, //                            default
     // ...
     "rust-analyzer.diagnostics.disabled": [], //                          default
+    "rust-analyzer.checkOnSave.command": "clippy",
     "rust-analyzer.checkOnSave.enable": true, //                          default
     // ...
     "rust-analyzer.diagnostics.enable": false,
