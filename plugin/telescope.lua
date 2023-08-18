@@ -54,6 +54,9 @@ vim.keymap.set("n", "<leader>fc", builtin.git_commits, expr_opts)
 -- List manpage entries, opens them in a help window on <cr>.
 vim.keymap.set("n", "<leader>fm", builtin.man_pages, expr_opts)
 
+-- Open list of todo items with ":TodoTelescope". (see "todo-comments.nvim")
+vim.keymap.set("n", "<leader>ft", ":TodoTelescope<C>", expr_opts)
+
 -- }}}
 -- Colors {{{
 

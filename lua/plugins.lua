@@ -51,4 +51,12 @@ return require("packer").startup(function()
 
     use "lewis6991/gitsigns.nvim"
 
+    use { "folke/todo-comments.nvim",
+        requires = {
+            "nvim-lua/plenary.nvim"
+        }
+    }
+
+    -- use "~/Desktop/testoo"
+    -- use "liuchengxu/vim-which-key"
 end)
