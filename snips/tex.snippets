@@ -3,7 +3,7 @@
 # ╚═══════════════════════════════════════════════════════════════════════════╝
 snippet begin ""
 \begin{$1}
-    $2$
+    $2
 \end{$1}
 endsnippet
 snippet newpage ""
@@ -29,6 +29,9 @@ snippet usepackage_amsmath ""
 endsnippet
 snippet usepackage_amsfonts ""
 \usepackage{amsfonts}
+endsnippet
+snippet usepackage_blindtext ""
+\usepackage{blindtext}
 endsnippet
 snippet usepackage_caption ""
 \usepackage{caption}
@@ -383,9 +386,9 @@ snippet minipage ""
 \end{figure} \ \\\
 endsnippet
 snippet multicol ""
-\begin{multicol}{${1:cols}
+\begin{multicols}{${1:cols}}
     $2
-\end{multicol}
+\end{multicols}
 endsnippet
 snippet newcommand ""
 \newcommand{${1:name}[${2:arg_num}]{${3:definition}
@@ -445,4 +448,7 @@ snippet del ""
 endsnippet
 snippet partial ""
 \partial
+endsnippet
+snippet blindtext ""
+\blindtext
 endsnippet
