@@ -383,26 +383,26 @@ endsnippet
 snippet maketitle ""
 \maketitle
 endsnippet
-snippet minipage ""
+snippet begin_minipage ""
 \begin{figure}[h!]
     \centering
     \begin{minipage}{.5\linewidth}
-      \centering
-      \subfloat[]{
-        \label{:a}
-        \includegraphics[scale=.5]{}
-      }
+		\centering
+      	\subfloat[]{
+			\label{:a}
+      	  	\includegraphics[width=\linewidth]{}
+      	}
     \end{minipage}%
     \begin{minipage}{.5\linewidth}
-      \centering
-      \subfloat[]{
-        \label{:b}
-        \includegraphics[scale=.5]{}
-      }
+		\centering
+      	\subfloat[]{
+			\label{:b}
+			\includegraphics[width=\linewidth]{}
+      	}
     \end{minipage}
     \subfloat[]{
-      \label{:e}
-      \includegraphics[scale=.5]{}
+		\label{:e}
+      	\includegraphics[width=\linewidth]{}
     }
     \caption{}
     \label{}
