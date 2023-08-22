@@ -9,15 +9,6 @@ endsnippet
 snippet newpage ""
 \newpage
 endsnippet
-snippet section ""
-\section{$1}
-endsnippet
-snippet subsection ""
-\subsection{$1}
-endsnippet
-snippet subsubsection ""
-\subsubsection{$1}
-endsnippet
 # ╔═══════════════════════════════════════════════════════════════════════════╗
 # ║                            PACKAGE IMPORTS                                ║
 # ╚═══════════════════════════════════════════════════════════════════════════╝
@@ -67,9 +58,37 @@ snippet usepackage_xcolor ""
 \usepackage{xcolor}
 endsnippet
 # ╔═══════════════════════════════════════════════════════════════════════════╗
+# ║                               SECTIONS                                    ║
+# ╚═══════════════════════════════════════════════════════════════════════════╝
+snippet chapter ""
+\chapter{$1}
+endsnippet
+snippet section ""
+\section{$1}
+endsnippet
+snippet subsection ""
+\subsection{$1}
+endsnippet
+snippet subsubsection ""
+\subsubsection{$1}
+endsnippet
+snippet paragraph ""
+\paragraph{$1}
+endsnippet
+snippet mparagraph ""
+\myparagraph{$1}
+endsnippet
+# ╔═══════════════════════════════════════════════════════════════════════════╗
+# ║                                FIGURES                                    ║
+# ╚═══════════════════════════════════════════════════════════════════════════╝
+snippet begin_figure ""
+\begin{figure}
+\end{figure}
+endsnippet
+# ╔═══════════════════════════════════════════════════════════════════════════╗
 # ║                                 TABLES                                    ║
 # ╚═══════════════════════════════════════════════════════════════════════════╝
-snippet table ""
+snippet begin_table ""
 \begin{table}[h!]
     \begin{center}
 	\caption{$1}
@@ -79,12 +98,10 @@ snippet table ""
     \end{center}
 \end{table} \ \\\ 
 endsnippet
-snippet tabular ""
-\begin{center}
-    \begin{tabular}{$2}
-      	
-    \end{tabular}
-\end{center}
+snippet begin_tabular ""
+\begin{tabular}{$2}
+  	
+\end{tabular}
 endsnippet
 # ╔═══════════════════════════════════════════════════════════════════════════╗
 # ║                           TEX-FILE INCLUSION                              ║
@@ -148,6 +165,30 @@ snippet vmatrix ""
     $1
 
 endsnippet
+snippet cite ""
+\cite{$1}
+endsnippet
+snippet citeauthor ""
+\citeauthor{$1}
+endsnippet
+snippet citeyear ""
+\citeyear{$1}
+endsnippet
+snippet citelater ""
+\red{[cite]}
+endsnippet
+# ╔═══════════════════════════════════════════════════════════════════════════╗
+# ║                              TEXT FORMATTING                              ║
+# ╚═══════════════════════════════════════════════════════════════════════════╝
+snippet bold ""
+\textbf{$1}
+endsnippet
+snippet italic ""
+\textit{$1}
+endsnippet
+snippet underline ""
+\underline{$1}
+endsnippet
 # ╔═══════════════════════════════════════════════════════════════════════════╗
 # ║                                  UNSORTED                                 ║
 # ╚═══════════════════════════════════════════════════════════════════════════╝
@@ -160,8 +201,8 @@ snippet align ""
     $1
 \end{align}
 endsnippet
-snippet bold ""
-\textbf{$1}
+snippet blindtext ""
+\blindtext
 endsnippet
 snippet caption ""
 \caption{$1}
@@ -178,21 +219,6 @@ snippet center ""
 endsnippet
 snippet centering ""
 \centering
-endsnippet
-snippet chapter ""
-\chapter{$1}
-endsnippet
-snippet cite ""
-\cite{$1}
-endsnippet
-snippet citeauthor ""
-\citeauthor{$1}
-endsnippet
-snippet citeyear ""
-\citeyear{$1}
-endsnippet
-snippet citelater ""
-\red{[cite]}
 endsnippet
 snippet clearpage ""
 \clearpage
@@ -333,9 +359,6 @@ endsnippet
 snippet input ""
 \input{$1}
 endsnippet
-snippet italic ""
-\textit{$1}
-endsnippet
 snippet item ""
 \item $1
 endsnippet
@@ -396,12 +419,6 @@ endsnippet
 snippet noindent ""
 \noindent
 endsnippet
-snippet paragraph ""
-\paragraph{$1}
-endsnippet
-snippet mparagraph ""
-\myparagraph{$1}
-endsnippet
 snippet partial ""
 \partial
 endsnippet
@@ -440,15 +457,9 @@ snippet tikzpic ""
     $1
 \end{tikzpicture}
 endsnippet
-snippet underline ""
-\underline{$1}
-endsnippet
 snippet del ""
 \del
 endsnippet
 snippet partial ""
 \partial
-endsnippet
-snippet blindtext ""
-\blindtext
 endsnippet
