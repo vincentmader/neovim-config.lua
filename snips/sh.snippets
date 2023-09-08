@@ -1,21 +1,27 @@
-snippet hashbang "#!/bin/sh"
+snippet hashbang_sh "#!/bin/sh"
 #!/bin/sh
 endsnippet
 
-snippet for_basic "basic for loop"
-for i in ${1:file}; do
-  echo $i
+snippet for_i_in_arr ""
+for i in "${arr[@]}"; do
+    echo "$i"
 done
 endsnippet
-
-snippet for_c "c-like for loop"
+snippet for_i_in_range ""
 for ((i = 0; i < 100; i++)); do
   echo $i
 done
 endsnippet
 
-snippet func "function declaration"
+snippet function ""
 function ${1:function name}() {
     echo "hello world"
 }
+endsnippet
+
+snippet array ""
+arr=(
+	"item_1"
+	"item_2"
+)
 endsnippet
