@@ -16,6 +16,15 @@ endsnippet
 # ║                      Imports from Standard Library                        ║
 # ╚═══════════════════════════════════════════════════════════════════════════╝
 
+# DATACLASSES
+# ─────────────────────────────────────────────────────────────────────────────
+snippet from_dataclasses_import_dataclass ""
+from dataclasses import dataclass
+endsnippet
+snippet dataclass_decorator ""
+@dataclass
+endsnippet
+
 # DATETIME
 # ─────────────────────────────────────────────────────────────────────────────
 snippet import_datetime ""
@@ -26,6 +35,12 @@ from datetime import datetime as dt
 endsnippet
 snippet from_datetime_import_timedelta_as_td ""
 from datetime import timedelta as td
+endsnippet
+
+# ENUM
+# ─────────────────────────────────────────────────────────────────────────────
+snippet from_enum_import_enum ""
+from enum import Enum
 endsnippet
 
 # OS
@@ -65,6 +80,9 @@ endsnippet
 # ─────────────────────────────────────────────────────────────────────────────
 snippet from_typing_import_optional ""
 from typing import Optional
+endsnippet
+snippet from_typing_import_any ""
+from typing import Any
 endsnippet
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
@@ -111,6 +129,9 @@ import matplotlib as mpl
 endsnippet
 snippet import_matplotlib.pyplot_as_plt ""
 import matplotlib.pyplot as plt
+endsnippet
+snippet plt_text ""
+plt.text($1)
 endsnippet
 
 # NUMPY
