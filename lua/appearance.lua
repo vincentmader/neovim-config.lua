@@ -20,7 +20,7 @@ vim.cmd([[
 -- }}}
 -- Color Column {{{
 
-vim.opt_local.colorcolumn = '81'
+-- vim.opt_local.colorcolumn = '81'
 
 -- }}}
 -- Welcome Screen {{{
