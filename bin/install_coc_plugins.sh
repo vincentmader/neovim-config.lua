@@ -22,5 +22,5 @@ nvim\
           # coc-lua\       -> leads to massive amounts of RAM consumption
           # coc-jedi\
           # coc-prettier\
-          # coc-python
+          # coc-python\
           # coc-sourcekit # Swift LSP
