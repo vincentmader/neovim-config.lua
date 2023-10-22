@@ -91,6 +91,11 @@ vim.opt.writebackup = false
 vim.opt.updatetime = 300
 
 -- }}}
+-- Define keymap for executing currently opened file. {{{
+
+vim.keymap.set('n', "<leader>o", ":wa | !([ -x % ] || chmod +x %) & ./%<CR>", {desc = "Execute file"})
+
+-- }}}
 
 vim.cmd([[
     autocmd BufEnter *.tera :set filetype=html
